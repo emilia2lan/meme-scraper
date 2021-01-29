@@ -13,6 +13,8 @@ axios
     // filters all imagines and get array
     const images = dom.window.document.querySelectorAll('img');
 
+    fs.mkdirSync('./images');
+
     for (let i = 0; i < 10; i++) {
       const fileSource = images[i].getAttribute('src');
       console.log(fileSource);
