@@ -1,4 +1,5 @@
 const axios = require('axios');
+// eslint-disable-next-line @typescript-eslint/naming-convention
 const { JSDOM } = require('jsdom');
 const fs = require('fs');
 const request = require('request');
