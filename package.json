@@ -6,9 +6,11 @@
   "author": "Emilia Tulan <emilia.tulan@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@types/jsdom": "^16.2.6",
+    "@types/request": "^2.48.5",
     "@typescript-eslint/eslint-plugin": "^4.0.0",
     "@typescript-eslint/parser": "^4.0.0",
-    "@upleveled/eslint-config-upleveled": "1.5.1",
+    "@upleveled/eslint-config-upleveled": "1.5.17",
     "babel-eslint": "^10.0.0",
     "eslint": "^7.5.0",
     "eslint-config-react-app": "6.0.0",

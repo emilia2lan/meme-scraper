@@ -4,6 +4,8 @@ const { JSDOM } = require('jsdom');
 const fs = require('fs');
 const request = require('request');
 
+fs.rmdirSync('images', { recursive: true });
+
 axios
   .get('https://memegen-link-examples-upleveled.netlify.app/')
   .then(async (res) => {
@@ -21,7 +23,7 @@ axios
       console.log(fileSource);
 
       // brings the images in .jpg and add names
-      request(`${fileSource}`).pipe(
+      request(fileSource).pipe(
         fs.createWriteStream(`${__dirname}/images/img_${i + 1}.jpg`),
       );
     }
