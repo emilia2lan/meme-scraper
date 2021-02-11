@@ -13,7 +13,7 @@ axios
 
     const dom = new JSDOM(res.data);
 
-    // filters all imagines and get array
+    // filters all images and get array
     const images = dom.window.document.querySelectorAll('img');
 
     fs.mkdirSync('./images');
